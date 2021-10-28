@@ -16,16 +16,31 @@ import {
   View,
 } from 'react-native';
 
-const App = () =>{
-  const data =" shahmir ghouri"
-    return(
-        <View>
-          <Home data={data}/>
-        </View>
-
-    )
+class App extends React.Component {
+  constructor()
+  {
+    super();
+    this.state = {
+      data: " some data"
+    }
   }
 
+  data_fun()
+  {
+    this.setState({data:"New DATA.. TY"})
+  }
+  render()
+  {
+    return(
+      <View>
+        <Text>Hello MEGAHERTZ..</Text>
+        <Text style={{fontSize:25}}>{this.state.data}</Text>
+        <Button title="Update State" onPress={() => {this.data_fun()}}></Button>
+
+      </View>
+    )
+  }
+}
 
 
 export default App;
