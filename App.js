@@ -7,6 +7,7 @@
  */
 
 import React from 'react';
+import Home from './components/Home';
 //import type {Node} from 'react';
 import Login from './components/Login'
 import {
@@ -15,18 +16,16 @@ import {
   View,
 } from 'react-native';
 
-class App extends React.Component {
-  render()
-  {
+const App = () =>{
+  const data =" shahmir ghouri"
     return(
         <View>
-          <Text style={{fontSize:30}}>Welcome to MEGAHERTZ..</Text>
-          <Button title="Login"  onPress={() => alert("hello world")}></Button>
+          <Home data={data}/>
         </View>
 
     )
   }
-}
+
 
 
 export default App;
