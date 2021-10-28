@@ -15,23 +15,18 @@ import {
   View,
 } from 'react-native';
 
-
-const App = () => {
-
-  function login()
+class App extends React.Component {
+  render()
   {
-    alert("Login Succssful....")
+    return(
+        <View>
+          <Text style={{fontSize:30}}>Welcome to MEGAHERTZ..</Text>
+          <Button title="Login"  onPress={() => alert("hello world")}></Button>
+        </View>
+
+    )
   }
-
-
-  return (
-    <View>
-      <Text style={{fontSize:30}}>   Welcome to MEGAHERTZ</Text>
-      <Button title="Login" onPress={login}></Button>
-    </View>
-  );
-};
-
+}
 
 
 export default App;
