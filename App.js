@@ -14,6 +14,7 @@ import {
   Button,
   Text,
   View,
+  StyleSheet
 } from 'react-native';
 
 class App extends React.Component {
@@ -32,15 +33,34 @@ class App extends React.Component {
   render()
   {
     return(
-      <View>
+      <View >
         <Text>Hello MEGAHERTZ..</Text>
-        <Text style={{fontSize:25}}>{this.state.data}</Text>
+        <Text style={[styles.colors,styles.fonts]}>{this.state.data}</Text>
         <Button title="Update State" onPress={() => {this.data_fun()}}></Button>
 
       </View>
     )
   }
 }
+
+
+const styles = StyleSheet.create({
+  colors:{
+    color:'maroon',
+    backgroundColor:'lightpink'
+
+  },
+  fonts:{
+    fontSize: 30,
+    fontFamily:'ariel'
+    
+  },
+   backColor:{
+     backgroundColor:'#808080'
+   }
+})
+
+
 
 
 export default App;
