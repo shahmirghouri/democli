@@ -14,29 +14,47 @@ import {
   Button,
   Text,
   View,
-  StyleSheet
+  StyleSheet,
+  TextInput
 } from 'react-native';
 
 class App extends React.Component {
-  constructor()
-  {
+  constructor(){
     super();
-    this.state = {
-      data: " some data"
+    this.state={
+      name:"",
+      pass:"",
+      address:"",
     }
   }
 
-  data_fun()
+  chngeData ()
   {
-    this.setState({data:"New DATA.. TY"})
+    
   }
-  render()
+  submit()
   {
-    return(
-      <View >
-        <Text>Hello MEGAHERTZ..</Text>
-        <Text style={[styles.colors,styles.fonts]}>{this.state.data}</Text>
-        <Button title="Update State" onPress={() => {this.data_fun()}}></Button>
+      alert("Data Submitted");
+  }
+
+
+  render() {
+    return (
+      <View>
+        <TextInput placeholder="Enter Name" style={[]} 
+          onChangeText={(text)=> {this.setState({name:text})}} >
+
+        </TextInput>
+
+        <TextInput placeholder="Enter Password" style={[]} 
+          onChangeText={(text)=> {this.setState({pass:text})}} >
+
+        </TextInput>
+
+        <TextInput placeholder="Enter Address" style={[]} 
+          onChangeText={(text)=> {this.setState({address:text})}} >
+
+        </TextInput>
 
       </View>
     )
