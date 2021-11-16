@@ -5,7 +5,13 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'skyblue',
+        backgroundColor:'white'
+
+    },
+
+    skip_btn:
+    {
+        marginTop: 20,
     }
 })
 

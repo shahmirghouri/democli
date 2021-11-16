@@ -1,11 +1,25 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, Button, TouchableOpacity, TouchableHighlight, Image } from 'react-native'
+import navigationString from '../../constants/navigationString'
 import styles from './styles'
+import ConstButton from '../../asset/button'
 
-export default function Explore1() {
+export default function Explore1({navigation}) {
+    
     return (
         <View style={styles.container}>
-            <Text>Explore ...</Text>
+         
+
+        <Image source={require('../../asset/mhz_logo.png')} style={{ width: 400, height: 350 }}/>
+
+         <ConstButton text="Let's get started" onPress={()=> navigation.navigate(navigationString.EXPLORE2)}/>
+        
+         <TouchableOpacity onPress={()=> navigation.navigate(navigationString.EXPLORE2)}>
+
+            <Text style={styles.skip_btn}>Skip for now</Text>
+        
+        </TouchableOpacity>
+        
         </View>
     )
 }
