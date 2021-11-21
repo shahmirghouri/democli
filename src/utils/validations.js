@@ -21,11 +21,11 @@ export default function (data) {
     const { userName, email, password } = data
 
     if (userName !== undefined) {
-        let emptyValidationText = checkEmpty(userName, 'Please enter your user name')
+        let emptyValidationText = checkEmpty(userName, 'Please enter your usernamee')
         if (emptyValidationText !== '') {
             return emptyValidationText;
         } else {
-            let minLengthValidation = checkMinLength(userName, 3, 'userName')
+            let minLengthValidation = checkMinLength(userName, 6, 'username')
             if (minLengthValidation !== '') {
                 return minLengthValidation
             }

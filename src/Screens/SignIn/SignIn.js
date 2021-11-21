@@ -6,11 +6,12 @@ import TextInputWithLable from '../../Component/TextInputWithLable';
 import navigationString from '../../constants/navigationString';
 import styles from './styles';
 import validator from '../../utils/validations';
-import { showError } from '../../utils/helperFunction';
+import {showError} from '../../utils/helperFunction';
 
 export default function SignIn({navigation}) {
   const [state, setState] = useState({
     isLoading: false,
+
     email: '',
     password: '',
     isSecure: true,
@@ -26,8 +27,8 @@ export default function SignIn({navigation}) {
     });
 
     if (error) {
-    //   alert(error);
-        showError(error);
+      //   alert(error);
+      showError(error);
       return false;
     } else {
       return true;
