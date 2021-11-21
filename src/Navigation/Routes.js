@@ -16,7 +16,7 @@ function Routes(){
         <NavigationContainer>
         <Stack.Navigator>
 
-            {AuthStack(Stack)}
+            {false ?  MainStack(Stack) : AuthStack(Stack)}
 
             {/* <Stack.Screen name={navigationString.EXPLORE1} component={Explore1} /> 
             <Stack.Screen name={navigationString.EXPLORE2} component={Explore2} />

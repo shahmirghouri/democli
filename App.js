@@ -105,7 +105,7 @@
 
 import * as React from 'react';
 import { View, Text } from 'react-native';
-
+import FlashMessage from 'react-native-flash-message';
 import Routes from './src/Navigation/Routes'
 
 
@@ -114,6 +114,7 @@ const App = () => {
   return (
     <View style={{flex:1}}>
       <Routes />
+      <FlashMessage position='top'/>
     </View>
   );
 }
