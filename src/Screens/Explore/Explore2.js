@@ -11,7 +11,7 @@ export default function Explore2({navigation}) {
          
         
         {/*  <Button title="next" onPress={()=> navigation.navigate(navigationString.HOME)}></Button> */}
-         <ConstButton text="Next" onPress={()=> navigation.navigate(navigationString.HOME)}/>
+         <ConstButton text="Next" onPress={()=> navigation.navigate(navigationString.SIGNIN)}/>
         </View>
     )
 }

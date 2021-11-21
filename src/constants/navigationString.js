@@ -3,4 +3,6 @@ export default {
     PROFILE: "Profile",
     EXPLORE1: "Explore1",
     EXPLORE2: "Explore2",
+    SIGNIN: "SignIn",
+    SIGNUP: "SignUp",
 }
