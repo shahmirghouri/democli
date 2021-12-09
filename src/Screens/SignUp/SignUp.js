@@ -44,7 +44,7 @@ export default function SignUp({navigation}) {
   const onSignup = () => {
     const checkValid = isValidData();
     if (checkValid) {
-        navigation.navigate(navigationString.HOME)
+        navigation.navigate(navigationString.DASHBOARD)
         
     }
   };

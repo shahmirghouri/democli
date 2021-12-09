@@ -6,4 +6,5 @@ export default {
     SIGNIN: "SignIn",
     SIGNUP: "SignUp",
     CHAT: "Chat",
+    DASHBOARD:"Dashboard",
 }

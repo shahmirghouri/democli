@@ -1,4 +1,4 @@
-import {SignIn, SignUp, Explore1, Explore2, Home, Chat} from '../Screens';
+import {SignIn, SignUp, Explore1, Explore2, Home, Chat, Dashboard} from '../Screens';
 import * as React from 'react';
 import navigationString from '../constants/navigationString';
 
@@ -12,6 +12,7 @@ export default function(Stack) {
       <Stack.Screen name={navigationString.SIGNUP} component={SignUp} />
       <Stack.Screen name={navigationString.HOME} component={Home} />
       <Stack.Screen name={navigationString.CHAT} component={Chat} />
+      <Stack.Screen name={navigationString.DASHBOARD} component={Dashboard} />
     </>
     
   );

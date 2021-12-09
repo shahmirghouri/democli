@@ -13,3 +13,4 @@ export {default as Explore2} from './Explore/Explore2';
 export { default as SignIn } from './SignIn/SignIn';
 export { default as SignUp } from './SignUp/SignUp';
 export { default as Chat} from './Chat/Chat';
+export { default as Dashboard} from './Dashboard/Dashboard';
