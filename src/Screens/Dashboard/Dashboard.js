@@ -6,6 +6,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import { useRef } from 'react';
 import navigationString from '../../constants/navigationString'
 import Home from '../Home/Home'
+import Chat from '../Chat/Chat'
 
 
 const Tab = createBottomTabNavigator();
@@ -44,6 +45,8 @@ export default function Dashboard() {
 
           // Tab ICons....
         }
+
+        
         <Tab.Screen name={"Home"} component={Home} options={{
           tabBarIcon: ({ focused }) => (
             <View style={{
@@ -132,7 +135,7 @@ export default function Dashboard() {
           )
         }}></Tab.Screen>
 
-        <Tab.Screen name={"Notifications"} component={NotificationScreen} options={{
+        <Tab.Screen name={"Chat"} component={Chat} options={{
           tabBarIcon: ({ focused }) => (
             <View style={{
               // centring Tab Button...
@@ -140,7 +143,7 @@ export default function Dashboard() {
             //   top: 20
             }}>
               <MaterialCommunityIcons
-                name="bell-outline"
+                name="forum-outline"
                 size={25}
                 color={focused ? '#6902FC' : 'gray'}
               ></MaterialCommunityIcons>
@@ -227,21 +230,21 @@ function SettingsScreen() {
   );
 }
 
-function HomeScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Home!</Text>
-    </View>
-  );
-}
+// function HomeScreen() {
+//   return (
+//     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+//       <Text>Home!</Text>
+//     </View>
+//   );
+// }
 
-function NotificationScreen() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Notifications!</Text>
-    </View>
-  );
-}
+// function ChatScreen() {
+//   return (
+//     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+//       <Text>Chat!</Text>
+//     </View>
+//   );
+// }
 
 function SearchScreen() {
   return (

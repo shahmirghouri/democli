@@ -3,30 +3,22 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
+        // justifyContent: 'center',
+        // alignItems: 'center',
+        paddingHorizontal:20,
+        // justifyContent:'space-between',
         // backgroundColor: 'f4f4f4',
     },
 
-    skip_btn:
-    {
-        marginTop: 20,
+    searchContainer:{
+        height:40,
+        top:20,
+        backgroundColor:'lightgray',
         borderRadius:8,
-       
-        marginVertical:25,
-        marginHorizontal:25,
-        paddingVertical:14,
-        paddingHorizontal:10,
-        backgroundColor: '#6902FC',
-        
-    },
-    btnTxt:{
-        color: 'white',
-        // backgroundColor: 'f4f4f4',
-        fontWeight: 'bold',
-        textTransform: 'uppercase',
-        fontSize: 16,
-        textAlign: 'center',
+        // flex:1,
+        flexDirection:'row',
+        alignItems:'center'
+
     }
 })
 
