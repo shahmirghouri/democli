@@ -78,6 +78,7 @@ export default function Dashboard() {
             <View style={{
               // centring Tab Button...
               position: 'absolute',
+            
             //   top: 20
             }}>
               <MaterialCommunityIcons
